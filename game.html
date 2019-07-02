@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <img id = "img1" alt ="anhSo1" src="img/anh1.png" height="245" width="206" onclick="doiAnh()"/>
+<script>
+    function doiAnh() {
+        let anh = document.getElementById("img1");
+        if (anh.alt == "anhSo1"){
+            anh.src = "img/anh2.png";
+            anh.alt = "anhSo2";
+        } else if (anh.alt == "anhSo2") {
+            anh.src = "img/anh1.png";
+            anh.alt = "anhSo1";
+        }
+
+    }
+   </script>
+
+
+</body>
+</html>
